@@ -1,0 +1,266 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap");
+
+:root {
+  --MainBlueColor: #023868;
+  --MainDarkBlueColor: #1a202c;
+  --DarkBackGround: #eaedee;
+  --MainBackGround: #f5f5f5;
+  --DarkFooterColor: #232e31;
+}
+@font-face {
+  font-family: ExampleFont;
+  src: url(/path/to/fonts/examplefont.woff) format("woff"),
+    url(/path/to/fonts/examplefont.eot) format("eot");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+body {
+  direction: rtl;
+  font-family: "Cairo", sans-serif;
+  height: 5000px;
+  background-color: var(--DarkBackGround);
+  position: relative;
+  padding-top: 64px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--MainBlueColor);
+  border-radius: 10px;
+}
+
+/* Owl Cursoul */
+.universalServiceCenter .owl-carousel .owl-dots .owl-dot.active span {
+  background-color: var(--MainBlueColor);
+  width: 20px;
+}
+.universalServiceCenter .owl-nav {
+  visibility: hidden;
+}
+
+/* Public Classes */
+.telephone {
+  color: var(--MainBlueColor);
+}
+.MainBackGround {
+  background-color: var(--MainBackGround);
+}
+
+/* Start NavBar */
+nav {
+  direction: ltr;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+nav ul {
+  direction: rtl;
+  padding: 0px;
+}
+.navbar-brand img {
+  width: 160px;
+}
+@media (max-width: 350px) {
+  .navbar-brand img {
+    width: 150px;
+  }
+}
+@media (max-width: 240px) {
+  .navbar-brand img {
+    width: 100px;
+    margin: 6px 0px;
+  }
+}
+.carousel-inner {
+  max-height: 660px;
+}
+/* Carsoul */
+.carousel-item {
+  position: relative;
+  max-height: 700px;
+  background-position: bottom;
+}
+
+/* Start Why US */
+.whyUS {
+  border-bottom: 10px solid var(--MainBlueColor);
+  background-color: var(--DarkBackGround);
+}
+.whyUS h2 {
+  color: var(--MainBlueColor);
+  font-weight: bold;
+}
+.whyUS i {
+  font-size: 40px;
+  color: var(--MainDarkBlueColor);
+}
+.whyUS p {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--MainDarkBlueColor);
+}
+/* End Why US */
+
+/* Start aboutUs */
+.aboutUs {
+  background-color: var(--MainBackGround);
+}
+.aboutUs h2 {
+  color: var(--MainBlueColor);
+  font-weight: bold;
+}
+.aboutUs p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--MainDarkBlueColor);
+  text-align: justify;
+}
+/* End aboutUs */
+
+/* Start universalServiceCenter */
+.universalServiceCenter {
+  background-color: var(--DarkBackGround);
+}
+.universalServiceCenter h2 {
+  color: var(--MainBlueColor);
+  font-weight: bold;
+}
+.universalServiceCenter .owl-carousel a {
+  color: var(--MainDarkBlueColor);
+  font-size: 24px;
+  text-decoration: none;
+}
+.universalServiceCenter .owl-carousel .card {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  border: none;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.universalServiceCenter .owl-carousel .card-header {
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.universalServiceCenter .owl-carousel .card-header img {
+  max-height: 280px;
+  width: auto;
+}
+
+.universalServiceCenter .textAfterCursoul p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--MainDarkBlueColor);
+  text-align: justify;
+}
+
+/* Start imgBetweenText */
+.imgBetweenText::before {
+  height: 30px;
+  content: "";
+  display: block;
+}
+.imgBetweenText::after {
+  height: 30px;
+  content: "";
+  display: block;
+}
+.imgBetweenText {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--MainDarkBlueColor);
+  text-align: justify;
+}
+.imgBetweenText h2 {
+  color: var(--MainBlueColor);
+  font-weight: bold;
+}
+.imgBetweenText p {
+  color: var(--MainDarkBlueColor);
+}
+.imgBetweenText .imgContainer {
+  overflow: hidden;
+}
+.imgBetweenText .imgContainer:hover img {
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
+}
+/* End imgBetweenText */
+
+/* Start Contact US */
+.contactUs {
+  background-color: var(--DarkFooterColor);
+  border-top: 10px solid var(--MainBlueColor);
+}
+.contactUs .phones > a {
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+.contactUs .icons a {
+  text-decoration: none;
+  color: white;
+  /* pointer-events: none; */
+}
+.contactUs .icons a span i:first-child {
+  color: var(--MainBlueColor);
+}
+textarea {
+  resize: none;
+}
+.text-mute {
+  color: #bfbfbf;
+}
+/* End Contact US */
+
+/* Start Calling Button */
+.callingBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+}
+.callingBtn i {
+  font-size: 28px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #1e73be;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+/* Start Footer */
+footer {
+  background-color: var(--MainBlueColor);
+}
+/* End Footer */
