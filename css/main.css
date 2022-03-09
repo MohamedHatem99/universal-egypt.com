@@ -81,7 +81,7 @@ nav ul {
     width: 150px;
   }
 }
-@media (max-width: 240px) {
+@media (max-width: 246px) {
   .navbar-brand img {
     width: 100px;
     margin: 6px 0px;
@@ -95,6 +95,31 @@ nav ul {
   position: relative;
   max-height: 700px;
   background-position: bottom;
+}
+.drk:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+  width: 76%;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+@media (min-width: 650px) {
+  .carousel-caption a {
+    font-size: 30px;
+  }
 }
 
 /* Start Why US */
